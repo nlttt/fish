@@ -1,0 +1,20 @@
+name: victim
+
+if killer == 'Russia':
+  v_list = ['Lithuania', 'Ukraine', 'Finland']
+elif killer == 'Romania':
+  v_list = ['Hungary', 'Germany', 'Luxembourg']
+elif killer == 'France':
+  v_list = ['UK', 'Spain', 'Italy']
+elif killer == 'Austria':
+  v_list = ['Hungary', 'Czechia', 'Turkiye']
+elif killer == 'UK':
+  v_list = ['Germany', 'Denmark', 'France']
+elif killer == 'Italy':
+  v_list = ['Germany', 'Croatia', 'Greece']
+
+on-arrival:
+  var min = 0;
+  var max = 2;
+  v_num = Math.floor(Math.random() * (max - min + 1)) + min;
+victim = v_list(this.state.v_num)
