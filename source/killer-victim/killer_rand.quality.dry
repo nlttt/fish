@@ -4,4 +4,4 @@ on-arrival:
   var max = 5;
   k_num = Math.floor(Math.random() * (max - min + 1)) + min;
 k_list = ['Russia', 'Romania', 'France', 'Austria', 'UK', 'Italy']
-killer = k_list(this.state.k_num)
+killer = k_list(this.state.k_n
